@@ -1,6 +1,6 @@
 # Kaggle: APTOS 2019 Blindness Detection
 
-Data: 3362 retina images
+Data: 3 362 retina images
 
 Task: identify the severity of diabetic retinopathy on a scale of 0 to 4
 
