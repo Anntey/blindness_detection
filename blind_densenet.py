@@ -3,7 +3,7 @@
 #############
 
 import cv2
-import shap
+import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from keras.callbacks import Callback, ReduceLROnPlateau, EarlyStopping
