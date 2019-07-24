@@ -8,4 +8,4 @@ Evaluation: quadratic weighted kappa
 
 Solution: 2D-CNN with ResNet50 base
 
-Success: 0.631 QWP
+Success: 0.635 QWP
