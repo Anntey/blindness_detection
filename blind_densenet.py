@@ -41,7 +41,7 @@ for i, img_id in enumerate(train_df["id_code"]):
     x_train.append(img)
 
 x_train = np.asarray(x_train, dtype = "float32")
-x_train = x_train / 255.0 # normalize
+x_train = x_train / 255.0 # scale to 0...1
 
 x_test = []
 
