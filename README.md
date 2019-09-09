@@ -8,6 +8,6 @@ Evaluation: quadratic weighted kappa
 
 Solution: 2D-CNN with DenseNet121 base
 
-Success: 0.637 QWP
+Success: 0.858 QWP
 
 ![](images.png)
