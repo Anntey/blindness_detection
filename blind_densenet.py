@@ -51,8 +51,6 @@ for i, img_id in enumerate(test_df["id_code"]):
     img = cv2.resize(img, (128, 128))
     img = cv2.addWeighted(img, 4, cv2.GaussianBlur(img, (0, 0), 128/10), -4 , 128)
     x_test.append(img)
-    if i % 500 == 0:
-        print(i)
 
 x_test = np.asarray(x_test, dtype = "float32")
 x_test = x_test / 255.0
@@ -122,7 +120,7 @@ model.compile(
 # Fitting model #
 #################
 
-class KappaEval(Callback): # keras callback for QW-kappa loss evaluation
+class KappaEval(Callback): # keras callback for QW-kappa evaluation
     
     def on_train_begin(self, logs = {}):
         self.val_kappas = []
