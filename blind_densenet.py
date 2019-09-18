@@ -37,7 +37,7 @@ for i, img_id in enumerate(train_df["id_code"]):
     img = cv2.imread("./input/train_images/" + img_id + ".png")
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     img = cv2.resize(img, (128, 128))
-    img = cv2.addWeighted(img, 4, cv2.GaussianBlur(img, (0, 0), 128/10), -4 , 128) # credit to Ben Graham
+    img = cv2.addWeighted(img, 4, cv2.GaussianBlur(img, (0, 0), 128/10), -4 , 128)
     x_train.append(img)
 
 x_train = np.asarray(x_train, dtype = "float32")
