@@ -1,3 +1,4 @@
+
 #############
 # Libraries #
 #############
@@ -120,8 +121,7 @@ model.compile(
 # Fitting model #
 #################
 
-class KappaEval(Callback): # keras callback for QW-kappa evaluation
-    
+class KappaEval(Callback): # keras callback for QW-kappa evaluation   
     def on_train_begin(self, logs = {}):
         self.val_kappas = []
 
